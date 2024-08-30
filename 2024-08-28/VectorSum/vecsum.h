@@ -1,3 +1,3 @@
 #include <vector>
 
-int vecsum(std::vector<int> vec);
+int vecsum(const std::vector<int>& vec);
