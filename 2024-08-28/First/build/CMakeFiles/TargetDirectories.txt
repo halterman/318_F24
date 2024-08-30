@@ -1,3 +1,0 @@
-C:/Users/rick/Documents/Code/ClassCodeF24/318_F24/2024-08-28/First/build/CMakeFiles/prog.dir
-C:/Users/rick/Documents/Code/ClassCodeF24/318_F24/2024-08-28/First/build/CMakeFiles/ALL_BUILD.dir
-C:/Users/rick/Documents/Code/ClassCodeF24/318_F24/2024-08-28/First/build/CMakeFiles/ZERO_CHECK.dir
