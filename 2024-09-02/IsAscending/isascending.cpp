@@ -57,7 +57,7 @@ int main(int argc, char* argv[]) {
 
         double t1 = time_it(bigvec, is_ascending1);
         double t2 = time_it(bigvec, is_ascending2);
-        std::cout << "Speed up: " << t1/t2 << " x\n";
+        std::cout << "Speed up: " << t1/t2 << "x\n";
     }
 
 }
