@@ -6,19 +6,23 @@
 // Method definitions for the linked list class
 
 // Make an empty list
-LinkedList::LinkedList(): head{nullptr}, tail{nullptr} {}
+LinkedList::LinkedList(): head{nullptr} {}
 
 // Insert val into list
 void LinkedList::insert(int val) {
     Node *temp = new Node;
     temp->data = val;
     temp->next = nullptr;
-    if (!tail) {  // List is empty; make a new node
-        head = tail = temp;
+    if (!head) {  // List is empty; make a new node
+        head = temp;
     }
-    else {   // List is nonempty; add to back
-        tail->next = temp;
-        tail = temp;
+    else {   // Place at end of list
+        Node *cursor = head;
+        while (cursor->next) {
+            cursor = cursor->next;
+        }
+        // Cursor now should point to last element
+        cursor->next = temp;
     }
 }
 
@@ -33,7 +37,7 @@ bool LinkedList::find(int val) const {
     // Calls your find function
     return ::find(head, val) != nullptr;
 }
-// Remove an element from the list
+// Remove the first occurrence of an element from the list
 void LinkedList::remove(int val) {
     // Calls your remove function
     head = ::remove(head, val);
