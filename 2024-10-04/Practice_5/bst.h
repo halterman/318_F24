@@ -10,6 +10,9 @@ public:
     // Constructs an empty binary search tree.
     BinarySearchTree();
 
+    // Frees up the space held by the binary search tree
+    ~BinarySearchTree();
+
     // Inserts the element elem into the binary search tree, 
     // if possible. The method ignores an attempt to insert
     // a duplicate element.

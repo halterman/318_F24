@@ -7,6 +7,11 @@
 // Constructs an empty binary search tree.
 BinarySearchTree::BinarySearchTree(): root{nullptr} {}
 
+// Frees up the space held by the binary search tree
+BinarySearchTree::~BinarySearchTree() {
+    ::dispose(root);
+}
+
 // Inserts the element elem into the binary search tree, 
 // if possible. The method ignores an attempt to insert
 // a duplicate element.

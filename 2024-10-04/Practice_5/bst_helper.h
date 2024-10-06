@@ -8,6 +8,9 @@
 // the potentially new root of the tree.
 Node *insert(Node *t, int elem);
 
+// Deallocates all the nodes in the binary search tree
+void dispose(Node *t);
+
 // The print function prints all the elements of the binary search 
 // tree rooted at t. The order of the printing is unspecified. 
 // The function prints nothing if the tree is empty.
