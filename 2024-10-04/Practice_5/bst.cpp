@@ -31,11 +31,12 @@ int BinarySearchTree::size() const {
 // Returns the minimum element in the tree  to which t points, 
 // if it exists; otherwise, the method returns an empty optional.
 std::optional<int> BinarySearchTree::minimum() const {
-    if (root) {
-        return ::minimum(root);  // Return the minimal value
+    Node *min = ::minimum(root);
+    if (min) {
+        return min->data;  // Return the minimal value
     }
     else {
-        return std::nullopt;     // Empty tree, so return empty optional
+        return std::nullopt;   // Empty tree, so return empty optional
     }
 }
 

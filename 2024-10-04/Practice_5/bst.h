@@ -23,6 +23,7 @@ public:
     // Returns the number of elements in the tree.
     int size() const;
 
+
     // Returns the minimum element in the tree  to which t points, 
     // if it exists; otherwise, the method returns an empty optional.
     std::optional<int> minimum() const;

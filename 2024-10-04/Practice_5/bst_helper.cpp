@@ -28,20 +28,20 @@ Node *insert(Node *t, int elem) {
 // tree rooted at t. The order of the printing is unspecified. 
 // The function prints nothing if the tree is empty.
 void print(const Node *t) {
-    // Replace with your code
+    // Add your code
 }
 
 // Returns the number of elements in the tree to which t points.
 int size(const Node *t) {
-    // Replace with your code
-    return -1;  // -1 never should be a correct result!
+    // Add your code
+    return -1;
 }
 
 
-// The minimum function returns the minimum element in the tree 
-// to which t points. The function's behavior is undefined if 
-// the tree is empty.
-int minimum(const Node *t) {
+// The minimum function returns a pointer to the node containing
+// the minimum element in the tree to which t points. 
+// The function returns null if the tree is empty.
+Node *minimum(Node *t) {
     // Replace with your code
-    return 0;
+    return nullptr;  
 }

@@ -17,8 +17,8 @@ void print(const Node *t);
 int size(const Node *t);
 
 
-// The minimum function returns the minimum element in the tree 
-// to which t points. The function's behavior is undefined if 
-// the tree is empty.
-int minimum(const Node *t);
+// The minimum function returns a pointer to the node containing
+// the minimum element in the tree to which t points. 
+// The function returns null if the tree is empty.
+Node *minimum(Node *t);
 
